@@ -18,7 +18,7 @@ int main() {
         }
 
         if (avrg_row != 0 && avrg_row != sum / n) {
-            cout << "No";
+            cout << "NO";
             return 0;
         }
         avrg_row = sum / n;
@@ -31,7 +31,7 @@ int main() {
         }
 
         if (avrg_column != 0 && avrg_column != sum / n) {
-            cout << "No";
+            cout << "NO";
             return 0;
         }
         avrg_column = sum / n;
@@ -40,11 +40,11 @@ int main() {
     }
 
     if (avrg_column == avrg_row) {
-        cout << "Yes";
+        cout << "YES";
         return 0;
     }
 
-    cout << "No";
+    cout << "NO";
 
 
     return 0;
