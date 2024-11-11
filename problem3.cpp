@@ -10,38 +10,26 @@ int main()
         for(int j=1;j<=n;j++){
             cin>>arr[i][j];
             sol[i][j]=arr[i][j];
-            cout<<arr[i][j]<<"  ";
+            
         }
-        cout<<endl;
+        
     }
-    
-    cout<<endl;
-    cout<<endl;
     
     cin>>t;
     int arr2[t][3];
     for(int i=1;i<=t;i++){
         for(int j=1;j<=3;j++){
             cin>>arr2[i][j];
-            cout<<arr2[i][j]<<"  ";
         }
-        cout<<endl;
     }
-    cout<<endl;
-    cout<<endl;
+
     
     for(int a=1;a<=t;a++){
         for(int i=1;i<=1;i++){
             sol[arr2[a][i]][arr2[a][i+1]] = arr2[a][i+2];
-            cout<<sol[arr2[a][i]][arr2[a][i+1]];
-            
-            cout<<endl;
-        }
+            }
     }
-    
-    cout<<endl;
-    cout<<endl;
-    
+
     for(int i=1;i<=m;i++){
         for(int j=1;j<=n;j++){
             cout<<sol[i][j]<<" ";
